@@ -1,0 +1,11 @@
+.sessionOne {
+  padding-left: 5%;
+  margin: 0%;
+  background-color: rgba(228, 8, 8, 0.3);
+}
+
+.sessionTwo {
+  padding-left: 5%;
+  margin: 0%;
+  background-color: rgba(8, 228, 52, 0.3);
+}
