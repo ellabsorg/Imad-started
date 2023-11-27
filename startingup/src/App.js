@@ -1,20 +1,22 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+import UserComponent from "./sessionTwo/UserComponent";
+import SessionOne from "./sessionOne/SessionOne";
+import SessionTwo from "./sessionTwo/SessionTwo";
 
 function App() {
-  const [number, setNumber] = useState(5);
-  function handleChange(x) {
-    if (x == "m" && number > 0) setNumber((prev) => prev - 1);
-    if (x == "p") setNumber((prev) => prev + 1);
-  }
-
   return (
-    <div className="App">
-      <button onClick={() => handleChange("m")}> - </button>
-      <h1> {number} </h1>
-      <button onClick={() => handleChange("p")}> + </button>
-    </div>
+    <>
+      <div className="sessionOne">
+        <h1>Session One </h1>
+        <SessionOne />
+      </div>
+      <hr />
+      <div className="sessionTwo">
+        <h1>Session Two </h1>
+        <SessionTwo />
+      </div>
+      <hr />
+    </>
   );
 }
 

@@ -1,0 +1,6 @@
+.usercomp{
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
