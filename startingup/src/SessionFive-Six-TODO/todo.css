@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(21, 21, 21);
+  user-select: none;
+}
+.container {
+  width: auto;
+  padding: 35px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid white;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper label {
+  font-size: 25px;
+  font-family: Roboto;
+  padding-right: 10px;
+}
+
+.addTaskInput {
+  width: 400px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: transparent;
+  color: white;
+}
+.wrapper input:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.wrapper button {
+  width: 40px;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+}
+.wrapper button:hover {
+  background-color: rgb(0, 160, 109);
+  border: 1px solid rgb(0, 160, 109);
+}
+
+.inputElement {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.taskLine {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputElement input:focus {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+}
+
+.deleteBtn {
+  background-color: #d21528; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* Remove button border */
+  border-radius: 4px; /* Add border radius for a rounded look */
+  padding: 8px 12px; /* Padding for the button */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s;
+}
+.deleteBtn:hover {
+  background-color: #a50818; /* Darker shade on hover */
+}
+.checkbox {
+  background-color: red;
+  border: 1px solid #a50818;
+}
+.task {
+  outline: none;
+  width: 400px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+.checkedTask {
+  outline: none;
+  width: 400px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  text-wrap: w;
+  text-decoration: line-through;
+  color: #474747;
+  user-select: none;
+}
