@@ -1,10 +1,10 @@
 import "./App.css";
-import Todo from "./SessionFive-Six-TODO/todo";
+import JokesFiltering from "./JokeAPI/JokesFiltering";
 
 function App() {
   return (
     <>
-      <Todo />
+      <JokesFiltering />
     </>
   );
 }
